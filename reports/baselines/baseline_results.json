@@ -1,0 +1,162 @@
+{
+  "train_end": "2023-12-29",
+  "test_start": "2024-01-02",
+  "horizon_days": 5,
+  "n_regimes": 3,
+  "results": {
+    "logreg": {
+      "accuracy": 0.5003162555344719,
+      "macro_f1": 0.4478235767622371,
+      "confusion_matrix": [
+        [
+          488,
+          197,
+          13
+        ],
+        [
+          295,
+          234,
+          30
+        ],
+        [
+          80,
+          175,
+          69
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.5654692931633836,
+          "recall": 0.6991404011461319,
+          "f1-score": 0.6252402306213966,
+          "support": 698.0
+        },
+        "1": {
+          "precision": 0.38613861386138615,
+          "recall": 0.4186046511627907,
+          "f1-score": 0.40171673819742487,
+          "support": 559.0
+        },
+        "2": {
+          "precision": 0.6160714285714286,
+          "recall": 0.21296296296296297,
+          "f1-score": 0.3165137614678899,
+          "support": 324.0
+        },
+        "accuracy": 0.5003162555344719,
+        "macro avg": {
+          "precision": 0.5225597785320661,
+          "recall": 0.44356933842396185,
+          "f1-score": 0.4478235767622371,
+          "support": 1581.0
+        },
+        "weighted avg": {
+          "precision": 0.5124327606791268,
+          "recall": 0.5003162555344719,
+          "f1-score": 0.48293978263231596,
+          "support": 1581.0
+        }
+      },
+      "features": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj_close",
+        "volume",
+        "vix_close",
+        "vix_volume",
+        "vix_log_return",
+        "vix_rv_10",
+        "vix_rv_20",
+        "log_return",
+        "rv_10",
+        "rv_20",
+        "rv_60",
+        "vol_mean_10",
+        "vol_std_10",
+        "vol_mean_20",
+        "vol_std_20"
+      ],
+      "n_train": 4347,
+      "n_test": 1581
+    },
+    "random_forest": {
+      "accuracy": 0.5053763440860215,
+      "macro_f1": 0.4654618051169776,
+      "confusion_matrix": [
+        [
+          472,
+          193,
+          33
+        ],
+        [
+          255,
+          234,
+          70
+        ],
+        [
+          83,
+          148,
+          93
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.582716049382716,
+          "recall": 0.6762177650429799,
+          "f1-score": 0.6259946949602122,
+          "support": 698.0
+        },
+        "1": {
+          "precision": 0.40695652173913044,
+          "recall": 0.4186046511627907,
+          "f1-score": 0.4126984126984127,
+          "support": 559.0
+        },
+        "2": {
+          "precision": 0.4744897959183674,
+          "recall": 0.28703703703703703,
+          "f1-score": 0.3576923076923077,
+          "support": 324.0
+        },
+        "accuracy": 0.5053763440860215,
+        "macro avg": {
+          "precision": 0.4880541223467379,
+          "recall": 0.4606198177476026,
+          "f1-score": 0.4654618051169776,
+          "support": 1581.0
+        },
+        "weighted avg": {
+          "precision": 0.49839291081521864,
+          "recall": 0.5053763440860215,
+          "f1-score": 0.4955945714566404,
+          "support": 1581.0
+        }
+      },
+      "features": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj_close",
+        "volume",
+        "vix_close",
+        "vix_volume",
+        "vix_log_return",
+        "vix_rv_10",
+        "vix_rv_20",
+        "log_return",
+        "rv_10",
+        "rv_20",
+        "rv_60",
+        "vol_mean_10",
+        "vol_std_10",
+        "vol_mean_20",
+        "vol_std_20"
+      ],
+      "n_train": 4347,
+      "n_test": 1581
+    }
+  }
+}
