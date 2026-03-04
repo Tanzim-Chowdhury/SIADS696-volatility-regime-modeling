@@ -182,3 +182,11 @@ Tameem Syed
 
 University of Michigan  
 SIADS 696 – Advanced Predictive Modeling
+
+## Report
+
+The final project report was written and typeset using **LaTeX**. The LaTeX source was compiled in an Overleaf environment and includes all figures generated during the analysis.
+
+The compiled PDF report is included in the repository for convenience, and the corresponding LaTeX source files and figures can be found in the report directory.
+
+This report documents the full modeling workflow, including feature engineering, supervised model evaluation, unsupervised regime modeling, and detailed analysis of results.
